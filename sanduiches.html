@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Big Gordo Sanduíches</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+    background:#E0A300;
+}
+
+header{
+background:#d61d1d;
+color:white;
+padding:30px;
+text-align:center;
+}
+
+header h1{
+font-size:40px;
+}
+
+header p{
+margin-top:10px;
+font-size:18px;
+}
+
+section{
+max-width:900px;
+margin:auto;
+padding:20px;
+}
+
+h2{
+color:#d61d1d;
+margin:20px 0;
+}
+
+.card{
+background:rgba(255,255,255,0.8);
+border-radius:12px;
+padding:18px;
+margin-bottom:15px;
+box-shadow:0 4px 10px rgba(0,0,0,.2);
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+.nome{
+font-weight:bold;
+font-size:18px;
+}
+
+.desc{
+font-size:13px;
+text-align:left;
+color:#666;
+margin-top:5px;
+}
+
+.preco{
+color:#d61d1d;
+font-size:20px;
+text-align:right;
+font-weight:bold;
+
+}
+
+.botao{
+display:block;
+width:260px;
+margin:35px auto;
+padding:15px;
+background:#25D366;
+color:white;
+text-decoration:none;
+text-align:center;
+border-radius:10px;
+font-size:18px;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:40px;
+}
+
+.titulo-card{
+    width:100%;
+    background:#c40000;
+    color:#fff;
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+    padding:12px;
+    margin:25px 0 15px;
+    border-radius:12px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
+
+}
+
+.btn-voltar{
+    background:#d61d1d;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    margin:15px;
+}
+
+.btn-voltar:hover{
+    opacity:0.8;
+}
+
+.titulo-opcionais{
+     width:95%;
+    background:#c40000;
+    color:#fff;
+    text-align:left;
+    font-size:15px;
+    font-weight:bold;
+    padding:5px;
+    margin:10px 0 10px;
+    border-radius:12px;
+    text-transform:uppercase;
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+    
+    <button onclick="history.back()" class="btn-voltar">⬅ Voltar</button>
+    
+
+<div class="titulo-card">
+     Sanduíches
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">01 - Big Gordo</div>
+        <div class="desc">Pão, hambúrguer, queijo, presunto, bacon, frango, ovo, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 13,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">02 - Big Especial</div>
+        <div class="desc">Pão, filé, queijo, presunto, bacon, frango, ovo, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 14,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">03 - Super Big</div>
+        <div class="desc">Pão, hambúrguer, filé, queijo, presunto, bacon, frango, ovo, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 15,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">04 - Big Tudo</div>
+        <div class="desc">Pão, hambúrguer, filé, queijo, presunto, bacon, frango, calabresa, salsicha, ovo, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 15,50</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">05 - Big Duplo</div>
+        <div class="desc">Pão, 2 hambúrgueres, 2 queijos, 2 presuntos, 2 ovos, 2 bacons, catupiry, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 16,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">06 - Big Misto</div>
+        <div class="desc">Pão, frango, filé, queijo, presunto, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 13,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">07 - Big Mistão</div>
+        <div class="desc">Pão, frango, filé, bacon, ovo, queijo, presunto, catupiry, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 15,50</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">08 - Big Frango</div>
+        <div class="desc">Pão, frango, bacon, queijo, presunto, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 13,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">09 - Frango Especial</div>
+        <div class="desc">Pão, frango, queijo, presunto, bacon, ovo, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 14,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">10 - X-Frango</div>
+        <div class="desc">Pão, frango, queijo, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 11,50</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">11 - X-Digão</div>
+        <div class="desc">Pão, frango, bacon, queijo, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 12,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">12 - X-Lula</div>
+        <div class="desc">Pão, frango, ovo, queijo, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 12,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">13 - Frango ao Catupiry</div>
+        <div class="desc">Pão, frango, queijo, catupiry, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 12,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">14 - X-Filé</div>
+        <div class="desc">Pão, filé, queijo, presunto, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 12,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">15 - X-Filé Bacon</div>
+        <div class="desc">Pão, filé, bacon, queijo, presunto, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 13,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">16 - Filé Egg Bacon</div>
+        <div class="desc">Pão, filé, bacon, queijo, presunto, ovo, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 14,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">17 - X-Alcatra</div>
+        <div class="desc">Pão, alcatra, queijo, presunto, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 12,50</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">18 - Alcatra Egg</div>
+        <div class="desc">Pão, alcatra, queijo, presunto, ovo, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 13,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">19 - X-Bacon</div>
+        <div class="desc">Pão, hambúrguer, queijo, presunto, bacon, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 11,50</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">20 - X-Egg Bacon</div>
+        <div class="desc">Pão, hambúrguer, queijo, presunto, bacon, ovo, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 12,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">21 - X-Egg Minuano</div>
+        <div class="desc">Pão, hambúrguer, queijo, presunto, ovo, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 11,50</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">22 - X-Salada</div>
+        <div class="desc">Pão, hambúrguer, queijo, presunto, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 11,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">23 - Big Alagoas</div>
+        <div class="desc">Pão, carne de sol, queijo, presunto, bacon, catupiry, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 15,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">24 - Alagoas</div>
+        <div class="desc">Pão, carne de sol, queijo coalho, ovo, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 14,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">25 - Salada Mista</div>
+        <div class="desc">Pão, hambúrguer de frango, ovo, queijo, presunto, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 13,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">26 - Frango Pajuçara</div>
+        <div class="desc">Pão, hambúrguer de frango, queijo, presunto, ovo, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 11,50</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">27 - X-Coração</div>
+        <div class="desc">Pão, coração, queijo, presunto, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 16,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">28 - Big Coração</div>
+        <div class="desc">Pão, coração, queijo, presunto, bacon, ovo, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 18,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">29 - X-Calabresa</div>
+        <div class="desc">Pão, calabresa, queijo, presunto, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 13,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">30 - Big Calabresa</div>
+        <div class="desc">Pão, calabresa, queijo, presunto, bacon, ovo, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 14,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">33 - Passaporte de Carne</div>
+        <div class="desc">Pão, carne moída, salsicha, milho verde, ervilha, queijo ralado, tomate e maionese.</div>
+    </div>
+    <div class="preco">R$ 11,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">34 - Passaporte de Frango</div>
+        <div class="desc">Pão, frango, salsicha, milho verde, ervilha, queijo ralado, tomate e maionese.</div>
+    </div>
+    <div class="preco">R$ 12,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">35 - Passaporte Frango ao Catupiry</div>
+        <div class="desc">Pão, frango, catupiry, salsicha, milho verde, ervilha, queijo ralado, tomate e maionese.</div>
+    </div>
+    <div class="preco">R$ 13,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">36 - Passaporte Misto</div>
+        <div class="desc">Pão, frango, carne moída, salsicha, milho verde, ervilha, queijo ralado, tomate e maionese.</div>
+    </div>
+    <div class="preco">R$ 13,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">37 - Americano</div>
+        <div class="desc">Pão, ovo, queijo, presunto, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 10,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">38 - Bauru</div>
+        <div class="desc">Pão, queijo, presunto, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 9,50</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">39 - Misto</div>
+        <div class="desc">Pão, queijo e presunto.</div>
+    </div>
+    <div class="preco">R$ 8,50</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">40 - Frango Xadrez</div>
+        <div class="desc">Pão, frango sassami, cebola, pimentão, molho shoyo, queijo, presunto, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 14,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">41 - Filé Xadrez</div>
+        <div class="desc">Pão, filé, cebola, pimentão, molho shoyo, queijo, presunto, alface e tomate.</div>
+    </div>
+    <div class="preco">R$ 14,00</div>
+</div>
+
+
+
+<div class="titulo-opcionais">
+     Adicionais
+</div>
+
+
+
+<div class="card">
+    <div>
+        <div class="nome"> Milho Verde</div>
+    </div>
+    <div class="preco">+ R$ 3,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome"> Ervilha</div>
+    </div>
+    <div class="preco">+ R$ 3,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome"> Salsicha</div>
+    </div>
+    <div class="preco">+ R$ 3,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome"> Bacon</div>
+    </div>
+    <div class="preco">+ R$ 3,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome"> Queijo</div>
+    </div>
+    <div class="preco">+ R$ 3,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome"> Presunto</div>
+    </div>
+    <div class="preco">+ R$ 3,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome"> Ovo</div>
+    </div>
+    <div class="preco">+ R$ 3,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome"> Hambúrguer (Carne ou Frango)</div>
+    </div>
+    <div class="preco">+ R$ 3,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome"> Catupiry</div>
+    </div>
+    <div class="preco">+ R$ 3,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome"> Calabresa</div>
+    </div>
+    <div class="preco">+ R$ 7,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome"> Filé</div>
+    </div>
+    <div class="preco">+ R$ 9,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome"> Frango</div>
+    </div>
+    <div class="preco">+ R$ 9,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome"> Coração</div>
+    </div>
+    <div class="preco">+ R$ 9,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome"> Carne de Sol</div>
+    </div>
+    <div class="preco">+ R$ 9,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome"> Alcatra</div>
+    </div>
+    <div class="preco">+ R$ 9,00</div>
+</div>
+
+<div class="card">
+    <div>
+        <div class="nome">
+          Batata Frita (Porção)</div>
+    </div>
+    <div class="preco">R$ 16,00</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+
